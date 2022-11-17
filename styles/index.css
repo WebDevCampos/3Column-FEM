@@ -1,6 +1,82 @@
 @import url(./reset.css);
 :root {
+  --sedan-bg: hsl(31, 77%, 52%);
+  --suv-bg: hsl(184, 100%, 22%);
+  --lux-bg: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+  --font-Lexend-Deca: "Lexend Deca", sans-serif;
+  --font-Big-Sholders: "Big Shoulders Display", cursive;
+  --footer-link: hsl(228, 45%, 44%);
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main {
+  max-width: 80rem;
+  display: flex;
+  margin: 0 auto;
+}
+
+.sedan-section {
+  background: var(--sedan-bg);
+  border-radius: 1rem 0 0 1rem;
+}
+
+.sedan-section .learn-more-btn {
+  color: var(--sedan-bg);
+}
+.suv-section {
+  background: var(--suv-bg);
+}
+.suv-section .learn-more-btn {
+  color: var(--suv-bg);
+}
+.lux-section {
+  background: var(--lux-bg);
+  border-radius: 0 1rem 1rem 0;
+}
+.lux-section .learn-more-btn {
+  color: var(--lux-bg);
+}
+.sedan-section,
+.suv-section,
+.lux-section {
+  padding: 3rem;
+}
+
+.text-section {
+  margin: 3rem 0;
+}
+
+.title {
+  color: var(--very-light-gray);
+  font-family: var(--font-Big-Sholders);
+  font-weight: 700;
+  font-size: clamp(5rem, 2vw, 6rem);
+}
+.description {
+  color: var(--paragraphs);
+  font-family: var(--font-Lexend-Deca);
+  line-height: 2;
+  margin: 3rem 0 6rem 0;
+}
+.learn-more-btn {
+  padding: 3rem 2rem;
+  border-radius: 5rem;
+  background: var(--very-light-gray);
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font: 2rem var(--font-Lexend-Deca);
+}
+
 .attribution {
   font-size: 1.1rem;
   text-align: center;
