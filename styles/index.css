@@ -1,0 +1,10 @@
+@import url(./reset.css);
+:root {
+}
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--footer-link);
+}
